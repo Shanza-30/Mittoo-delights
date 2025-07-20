@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mittoo's Ice Cream Delights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="bg-pink-50 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-ice-cream text-3xl text-pink-500 mr-2"></i>
+                    <span class="text-xl font-bold text-pink-700">Mittoo's Delights</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-pink-700 hover:text-pink-500">Home</a>
+                    <a href="#flavors" class="text-pink-700 hover:text-pink-500">Flavors</a>
+                    <a href="#about" class="text-pink-700 hover:text-pink-500">About Us</a>
+                    <a href="#contact" class="text-pink-700 hover:text-pink-500">Contact</a>
+                </div>
+                <button class="md:hidden text-pink-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero flex items-center justify-center text-center">
+        <div class="text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Artisanal Ice Cream</h1>
+            <p class="text-xl md:text-2xl mb-8">Handcrafted with love, served with happiness</p>
+            <button
+                class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                Our Flavors
+            </button>
+        </div>
+    </section>
+
+    <!-- Featured Flavors -->
+    <section id="flavors" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">Our Signature Flavors</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Flavor 1 -->
+                <div class="flavor-card bg-pink-50 rounded-2xl p-6 shadow-lg transition duration-300">
+                    <div class="flex justify-center scoop-animation">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/003560ae-5eb8-40b8-90e4-6a3024232328.png"
+                            alt="Scoop of rich chocolate ice cream with chocolate chips embedded, drizzled with chocolate sauce in a waffle cone"
+                            class="rounded-full h-48 w-48 object-cover">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-pink-700 mt-6">Chocolate Ecstasy</h3>
+                    <p class="text-gray-600 mt-2">Rich chocolate ice cream with chocolate chips and fudge swirls</p>
+                </div>
+
+                <!-- Flavor 2 -->
+                <div class="flavor-card bg-pink-50 rounded-2xl p-6 shadow-lg transition duration-300">
+                    <div class="flex justify-center scoop-animation" style="animation-delay: 0.5s;">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5f369324-927d-4382-839c-47b24551c2cf.png"
+                            alt="Scoop of creamy vanilla bean ice cream with visible vanilla bean specks, topped with fresh strawberry slices"
+                            class="rounded-full h-48 w-48 object-cover">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-pink-700 mt-6">Vanilla Dream</h3>
+                    <p class="text-gray-600 mt-2">Madagascar vanilla with real vanilla bean specks</p>
+                </div>
+
+                <!-- Flavor 3 -->
+                <div class="flavor-card bg-pink-50 rounded-2xl p-6 shadow-lg transition duration-300">
+                    <div class="flex justify-center scoop-animation" style="animation-delay: 1s;">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4b084bad-4f5a-4e4f-8c90-ca9d09e0dfab.png"
+                            alt="Bright pink scoop of strawberry ice cream with visible strawberry pieces, garnished with mint leaves"
+                            class="rounded-full h-48 w-48 object-cover">
+                    </div>
+                    <h3 class="text-2xl font-semibold text-pink-700 mt-6">Strawberry Fields</h3>
+                    <p class="text-gray-600 mt-2">Fresh strawberries blended into creamy goodness</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="ice cream.html"
+                    class="border-2 border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white font-bold py-2 px-8 rounded-full transition duration-300 inline-block">
+                    View All 10 Flavors
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-16 bg-pink-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/410aa628-dc6a-4ff1-bade-c6e374927b84.png"
+                        alt="Mittoo's Ice Cream shop interior showing vintage decor, ice cream counter with various flavors, and happy customers"
+                        class="rounded-2xl shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-pink-700 mb-6">Our Story</h2>
+                    <p class="text-gray-600 mb-4">
+                        Founded in 2010, Mittoo's Delights began as a small family-owned shop with just three flavors.
+                        Our passion for crafting the creamiest, most flavorful ice cream has made us a beloved part of
+                        the community.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        We source only the finest ingredients - locally whenever possible - and never use artificial
+                        flavors or preservatives. Every scoop is churned with love and attention to detail.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow">
+                            <i class="fas fa-award text-pink-500 text-2xl mr-3"></i>
+                            <span>Best Ice Cream 2023</span>
+                        </div>
+                        <div class="flex items-center bg-white p-4 rounded-lg shadow">
+                            <i class="fas fa-leaf text-pink-500 text-2xl mr-3"></i>
+                            <span>Organic Ingredients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="py-16 bg-gradient-to-r from-pink-400 to-purple-400 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Summer Special</h2>
+            <p class="text-xl mb-8">Buy 2 scoops, get 1 free! Every Wednesday in July.</p>
+            <button
+                class="bg-white text-pink-600 hover:bg-pink-100 font-bold py-3 px-8 rounded-full transition duration-300">
+                Grab This Deal
+            </button>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">Customer Testimonials</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <div class="bg-white p-6 rounded-2xl shadow-md border-l-4 border-pink-500">
+        <p class="text-gray-700 italic">“Mittoo’s Delights never disappoints. The flavors are rich, the texture is perfect, and the customer service is outstanding.”</p>
+        <div class="mt-4 font-medium text-pink-700">— Sara Qureshi</div>
+      </div>
+      
+      <div class="bg-white p-6 rounded-2xl shadow-md border-l-4 border-pink-500">
+        <p class="text-gray-700 italic">“Exceptional quality and creativity in every flavor. My kids love the variety and I appreciate the natural ingredients.”</p>
+        <div class="mt-4 font-medium text-pink-700">— Umar Mehmood</div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-pink-700 mb-12">Visit Us</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <div class="bg-pink-50 p-6 rounded-2xl shadow-lg mb-8">
+                        <h3 class="text-xl font-semibold text-pink-700 mb-4">Hours</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex justify-between"><span>Monday - Thursday</span> <span>12pm - 10pm</span>
+                            </li>
+                            <li class="flex justify-between"><span>Friday - Saturday</span> <span>11am - 11pm</span>
+                            </li>
+                            <li class="flex justify-between"><span>Sunday</span> <span>12pm - 9pm</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-pink-50 p-6 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-semibold text-pink-700 mb-4">Contact</h3>
+                        <div class="space-y-4 text-gray-600">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-pink-500 mt-1 mr-3"></i>
+                                <span>123 Sweet Street, Dessertville, DV 12345</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt text-pink-500 mr-3"></i>
+                                <span>(123) 456-7890</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-pink-500 mr-3"></i>
+                                <span>hello@mittoos.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3b7e65d0-68c4-40e0-8108-83df13f9d2d9.png"
+                        alt="Exterior of Mittoo's Ice Cream shop with vintage signage, outdoor seating, and customers enjoying ice cream on a sunny day"
+                        class="rounded-2xl shadow-lg w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-pink-50">
+        <div class="container mx-auto px-6 max-w-2xl text-center">
+            <h2 class="text-3xl font-bold text-pink-700 mb-4">Join Our Sweet Community</h2>
+            <p class="text-gray-600 mb-8">Subscribe for exclusive flavors, special offers, and sweet surprises!</p>
+
+            <div class="flex flex-col sm:flex-row gap-3">
+                <input type="email" placeholder="Your email address"
+                    class="flex-grow px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                <button
+                    class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-700 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-ice-cream text-3xl text-pink-200 mr-2"></i>
+                    <span class="text-xl font-bold text-pink-100">Mittoo's Delights</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-pink-200"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-pink-200"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-pink-200"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-pink-600 mt-6 pt-6 text-sm text-center text-pink-200">
+                <p>© 2023 Mittoo's Delights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
